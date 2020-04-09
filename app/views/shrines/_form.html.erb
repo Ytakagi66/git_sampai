@@ -1,0 +1,47 @@
+<%= form_with(model: shrine, local: true) do |form| %>
+  <% if shrine.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(shrine.errors.count, "error") %> prohibited this shrine from being saved:</h2>
+
+      <ul>
+      <% shrine.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :adress %>
+    <%= form.text_field :adress %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_field :url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :article %>
+    <%= form.text_field :article %>
+  </div>
+
+  <div class="field">
+    <%= form.label :god %>
+    <%= form.text_field :god %>
+  </div>
+
+  <div class="field">
+    <%= form.label :goshuin %>
+    <%= form.text_field :goshuin %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

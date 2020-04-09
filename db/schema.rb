@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_07_142924) do
+ActiveRecord::Schema.define(version: 2020_04_08_171559) do
+
+  create_table "shrines", force: :cascade do |t|
+    t.string "title"
+    t.string "adress"
+    t.string "url"
+    t.string "article"
+    t.string "god"
+    t.string "goshuin"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

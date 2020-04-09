@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @shrine.title %>
+</p>
+
+<p>
+  <strong>Adress:</strong>
+  <%= @shrine.adress %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @shrine.url %>
+</p>
+
+<p>
+  <strong>Article:</strong>
+  <%= @shrine.article %>
+</p>
+
+<p>
+  <strong>God:</strong>
+  <%= @shrine.god %>
+</p>
+
+<p>
+  <strong>Goshuin:</strong>
+  <%= @shrine.goshuin %>
+</p>
+
+<%= link_to 'Edit', edit_shrine_path(@shrine) %> |
+<%= link_to 'Back', shrines_path %>
