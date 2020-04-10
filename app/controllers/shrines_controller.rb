@@ -53,6 +53,6 @@ class ShrinesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def shrine_params
-      params.require(:shrine).permit(:title, :adress, :url, :article, :god, :goshuin)
+      params.require(:shrine).permit(:image,:title, :adress, :url, :article, :god, :goshuin)
     end
 end
