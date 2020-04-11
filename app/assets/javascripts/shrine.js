@@ -9,6 +9,9 @@ $(document).ready(function(){
 $('.horizontal_scroll').slick({
     asNavFor:'.slider',
     focusOnSelect: true,
-    slidesToShow:4,
-    slidesToScroll:1
+    dots:true,
+    slidesToShow:7,
+    variableWidth : true,
+    slidesToScroll: 1,
+    pauseOnHover: true,
 });

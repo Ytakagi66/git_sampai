@@ -41,6 +41,7 @@ class ShrinesController < ApplicationController
 
   # DELETE /shrines/1
   def destroy
+    @shrine = Shrine.find(params[:id])
     @shrine.destroy
     redirect_to shrines_url, notice: 'Shrine was successfully destroyed.'
   end
@@ -53,6 +54,6 @@ class ShrinesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def shrine_params
-      params.require(:shrine).permit(:image,:title, :adress, :url, :article, :god, :goshuin)
+      params.require(:shrine).permit(:image,:title, :adress, :url, :article, :god, :goshuin,:name)
     end
 end

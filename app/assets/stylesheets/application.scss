@@ -21,7 +21,6 @@ main {
 }
 
 header {
-  position: fixed;
   height: 100px;
 }
 
@@ -31,4 +30,9 @@ footer {
   text-align: center;
   background-color: black;
   color:#FFF;
+}
+
+body{
+  height:100%;
+  width:100%;
 }

@@ -1,12 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700);
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
-main{
-  height:100%;
-  display: block;
-  min-height: calc(100vh - 160px);
-  overflow: hidden;
-  margin:90px 0 40px 0;
+.field_with_errors {
+  display: contents;
 }
 
 input {
@@ -33,11 +29,20 @@ input {
   }
 }
 
+.devise{
+  height:100%;
+  display: block;
+  min-height: calc(100vh - 160px);
+  overflow: hidden;
+  background-image: url('竜安寺枯山水20190913_150314.jpg');
+  background-size: cover;  
+}
+
 .login-form {
   margin:100px auto;
   max-width: 50%;
   padding: .5rem;
-  text-align: center;  
+  text-align: center; 
 }
 
 .login-text {
@@ -111,6 +116,7 @@ input {
   min-width: 1px;
   padding: .25rem;
   transition: 250ms background ease-in;
+  width:100px;
   &:hover, &:focus {
     background: white;
     color: black;

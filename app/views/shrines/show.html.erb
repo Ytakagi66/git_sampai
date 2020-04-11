@@ -1,34 +1,18 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @shrine.title %>
-</p>
-
-<p>
-  <strong>Adress:</strong>
-  <%= @shrine.adress %>
-</p>
-
-<p>
-  <strong>Url:</strong>
-  <%= @shrine.url %>
-</p>
-
-<p>
-  <strong>Article:</strong>
-  <%= @shrine.article %>
-</p>
-
-<p>
-  <strong>God:</strong>
-  <%= @shrine.god %>
-</p>
-
-<p>
-  <strong>Goshuin:</strong>
-  <%= @shrine.goshuin %>
-</p>
-
-<%= link_to 'Edit', edit_shrine_path(@shrine) %> |
-<%= link_to 'Back', shrines_path %>
+<main>
+  <div class="shrine_show">
+      <div class="col-md-8">
+        <%= image_tag @shrine.image.url %>      
+        <div class="card-body">
+        <h5 class="card-name"><%= @shrine[:name] %></h5>
+        <p class="card-adress">所在地：<%= @shrine[:adress] %></p>
+        <p class="card-article"><%= simple_format(@shrine[:article]) %></p>
+        <p class="card-url">URL：<%= @shrine[:url] %></p>
+        <%= link_to '詳細', @shrine, class: "btn btn-outline-primary" %>
+        <%= link_to '編集', edit_shrine_path(@shrine), class: "btn btn-outline-primary" %>
+        <%= link_to '削除', @shrine, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger" %>
+      </div>
+    </div>
+  <%= link_to '編集', edit_shrine_path(@shrine) %> |
+  <%= link_to '戻る', shrines_path %>
+  </div>
+</main>
