@@ -1,4 +1,4 @@
-// Place all the styles related to the shrines controller here.
+// Place all the styles related to the temples controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
@@ -14,7 +14,7 @@
   list-style: none; 
 }
 
-.shrine_thumbnail{
+.temple_thumbnail{
   max-width:140px;
   margin:5px;
 }
@@ -44,7 +44,7 @@
 
 // 神社情報の新規登録
 
-.shrine_new_form{
+.temple_new_form{
   background-image:url('KUMAKICHI1027540_TP_V.jpg');
   background-size: cover;
   margin:0;
@@ -76,7 +76,7 @@
 }
 
 //indexページ
-.shrine_index{
+.temple_index{
   min-height:100vh;
   height:100%;
   margin:0;
@@ -84,7 +84,7 @@
   background-image:url('和柄.png');
 }
 
-.shrine_item{
+.temple_item{
   width:1100px;
   height:100%;
   margin:0 auto;
@@ -94,14 +94,14 @@
   bottom:50px;
 }
 
-.shrine_word{
-  font-size:17px;
+.temple_word{
+  font-size:15px;
   span{
     font-size:14px;
   }
 }
 
-.shrine_infomation{
+.temple_infomation{
   position:absolute;  
   width:470px;
   height:100%;
@@ -159,7 +159,7 @@
   list-style-type: none;
 }
 
-.shrine_slider_ttl{
+.temple_slider_ttl{
   width:1200px; 
   height:100%;
   margin:15px auto;
@@ -182,13 +182,13 @@
   box-sizing: border-box; }
 
 /* 名前 */
-.shrine_name {
+.temple_name {
   color: #bf0000;
   line-height: 1.65;
   font-size: 18px;
   margin-top: 4px; }
 
-.shrine_photo {
+.temple_photo {
   width: 140px;
   height: 100%;
   list-style:none;
@@ -196,7 +196,7 @@
   float:left;
 }
   
-.shrine_photo::after {
+.temple_photo::after {
     font-size: 30px;
     position: absolute;
     top: 0;
@@ -217,7 +217,7 @@
 }
 
 // 編集メソッド
-.shrine_edit_form{
+.temple_edit_form{
   background-image:url('KUMAKICHI1027540_TP_V.jpg');
   background-size: cover;
   margin:0;
@@ -249,18 +249,57 @@
 }
 
 // showメソッド
-.shrine_show{
+.temple_show_all{
   height:100%;
-  margin:10px 250px;
+  width:100%;
+  background-image:url('和柄.png');  
+}
+
+.temple_show{
+  min-height: calc(100vh - 120px);
+  height:  calc(100% - 100px);
+  margin: 10px 100px;
+  position: relative;
+  border: 2px solid #ccc;
+  
   .col-md-4{
     margin-left:100px;
   }
-  img{
+  .card-body{
+    position:absolute; 
+    left:500px;
     width:500px;
-    height:300px;
-    margin-left:50px;
+    height:500px;
+    margin-left:15px;
+    
+    .temple_article{
+      border:2px solid #ccc;
+      height:200px;
+      width:515px;
+      margin-bottom:10px;
+      font-size:13px;
+    }          
+  }
+  .temple_img{
+    width:500px;
+    height:500px;
+    margin:15px;
+    float:left;
+    border:2px solid #CCC;
+    border-radius:30px;
+    
+  }
+  .custom_link{
+    position:absolute;
+  }
+  .show_link{
+    position:absolute;
+    float:left;
+    top:calc(100% - 30px);
   }
 }
+
+
 
 .row no-gutters{
     background-color:black;
