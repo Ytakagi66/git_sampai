@@ -1,18 +1,26 @@
 <main>
-  <div class="shrine_show">
-      <div class="col-md-8">
-        <%= image_tag @shrine.image.url %>      
+  <div class="shrine_show_all">
+    <div class="shrine_show">
+        <%= image_tag @shrine.image.url,class:"shrine_img" %>      
         <div class="card-body">
-        <h5 class="card-name"><%= @shrine[:name] %></h5>
-        <p class="card-adress">所在地：<%= @shrine[:adress] %></p>
-        <p class="card-article"><%= simple_format(@shrine[:article]) %></p>
-        <p class="card-url">URL：<%= @shrine[:url] %></p>
-        <%= link_to '詳細', @shrine, class: "btn btn-outline-primary" %>
-        <%= link_to '編集', edit_shrine_path(@shrine), class: "btn btn-outline-primary" %>
-        <%= link_to '削除', @shrine, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger" %>
+          <h2 class="shrine_name">■名称：<%= @shrine[:name] %></h2>
+          <p class ="shrine_word">■御祭神<br><span><%= @shrine[:god] %></span></p>
+          <p class ="shrine_word">■御朱印：<span><%= @shrine[:goshuin] %></span></p>
+          <p class ="shrine_word">■所在地：<span><%= @shrine[:adress] %></span></p>    
+          <p class ="shrine_word">■URL：<span><%= link_to(@shrine[:url],@shrine[:url]) %></span></p>
+          <h3 class ="shrine_name">■概要</h3>
+          <div class ="shrine_article">
+            <%= simple_format(@shrine[:article]) %>
+          </div>
+          <div class="custom_link">
+            <%= link_to '編集', edit_shrine_path(@shrine), class: "btn btn-outline-primary" %>
+            <%= link_to '削除', @shrine, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger" %>
+          </div>
       </div>
     </div>
-  <%= link_to '編集', edit_shrine_path(@shrine) %> |
-  <%= link_to '戻る', shrines_path %>
-  </div>
+    <div class="show_link">  
+      <%= link_to '編集', edit_shrine_path(@shrine) %> |
+      <%= link_to '戻る', shrines_path %>
+    </div>      
+  </div>     
 </main>

@@ -1,0 +1,2 @@
+class Explanatory < ApplicationRecord
+end

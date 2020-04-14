@@ -85,7 +85,9 @@
 }
 
 .shrine_item{
+  min-width:1100px;
   width:1100px;
+  min-height:370px;
   height:100%;
   margin:0 auto;
   text-align:center;
@@ -95,7 +97,7 @@
 }
 
 .shrine_word{
-  font-size:17px;
+  font-size:15px;
   span{
     font-size:14px;
   }
@@ -160,7 +162,8 @@
 }
 
 .shrine_slider_ttl{
-  width:1200px; 
+  width:1200px;
+  min-height:261px;
   height:100%;
   margin:15px auto;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);   
@@ -249,18 +252,57 @@
 }
 
 // showメソッド
-.shrine_show{
+.shrine_show_all{
   height:100%;
-  margin:10px 250px;
+  width:100%;
+  background-image:url('和柄.png');  
+}
+
+.shrine_show{
+  min-height: calc(100vh - 120px);
+  height:  calc(100% - 100px);
+  margin: 10px 100px;
+  position: relative;
+  border: 2px solid #ccc;
+  
   .col-md-4{
     margin-left:100px;
   }
-  img{
+  .card-body{
+    position:absolute; 
+    left:500px;
     width:500px;
-    height:300px;
-    margin-left:50px;
+    height:500px;
+    margin-left:15px;
+    
+    .shrine_article{
+      border:2px solid #ccc;
+      height:200px;
+      width:515px;
+      margin-bottom:10px;
+      font-size:13px;
+    }          
+  }
+  .shrine_img{
+    width:500px;
+    height:500px;
+    margin:15px;
+    float:left;
+    border:2px solid #CCC;
+    border-radius:30px;
+    
+  }
+  .custom_link{
+    position:absolute;
+  }
+  .show_link{
+    position:absolute;
+    float:left;
+    top:calc(100% - 30px);
   }
 }
+
+
 
 .row no-gutters{
     background-color:black;
