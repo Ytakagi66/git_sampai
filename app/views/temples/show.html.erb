@@ -9,7 +9,7 @@
           <p class ="temple_word">■所在地：<span><%= @temple[:adress] %></span></p>    
           <p class ="temple_word">■URL：<span><%= link_to(@temple[:url],@temple[:url]) %></span></p>
           <h3 class ="temple_name">■概要</h3>
-          <div class ="shrine_word">
+          <div class ="temple_article">
             <%= simple_format(@temple[:article]) %>
           </div>
           <div class="custom_link">

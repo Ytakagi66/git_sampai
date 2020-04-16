@@ -9,7 +9,7 @@
           <p class ="shrine_word">■所在地：<span><%= @shrine[:adress] %></span></p>    
           <p class ="shrine_word">■URL：<span><%= link_to(@shrine[:url],@shrine[:url]) %></span></p>
           <h3 class ="shrine_name">■概要</h3>
-          <div class ="shrine_word">
+          <div class ="shrine_article">
             <%= simple_format(@shrine[:article]) %>
           </div>
           <div class="custom_link">
