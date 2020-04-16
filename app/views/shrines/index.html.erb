@@ -7,7 +7,7 @@
         <%= image_tag "/uploads/shrine/image/#{shrine[:id]}/#{shrine[:image]}" %>
         <div class="shrine_infomation">
           <h2 class="shrine_name">名称：<%= shrine[:name] %></h2>
-          <p class ="shrine_word">御祭神：<br><span><%= shrine[:god] %></span></p>
+          　<p class ="shrine_word">御祭神：<br><span><%= shrine[:god] %></span></p>
           <p class ="shrine_word">御朱印：<span><%= shrine[:goshuin] %></span></p>
           <p class ="shrine_word">所在地：<span><%= shrine[:adress] %></span></p>    
           <p class ="shrine_word">URL:<span><%= link_to(shrine[:url],shrine[:url]) %></span></p>
