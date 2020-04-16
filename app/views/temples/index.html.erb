@@ -7,7 +7,7 @@
         <%= image_tag "/uploads/temple/image/#{temple[:id]}/#{temple[:image]}" %>
         <div class="temple_infomation">
           <h2 class="temple_name">■名称：<%= temple[:name] %></h2>
-          　<p class ="temple_word">■御祭神<br><span><%= temple[:god] %></span></p>
+          　<p class ="temple_word">■御本尊<br><span><%= temple[:god] %></span></p>
           <p class ="temple_word">■御朱印：<span><%= temple[:goshuin] %></span></p>
           <p class ="temple_word">■所在地：<span><%= temple[:adress] %></span></p>    
           <p class ="temple_word">■URL:<span><%= link_to(temple[:url],temple[:url]) %></span></p>
@@ -18,7 +18,7 @@
   </div>
   
   <div class="temple_slider_ttl">  
-    <h1 class="slider_ttl">神社一覧</h1>
+    <h1 class="slider_ttl">寺院一覧</h1>
     <ul class="horizontal_scroll" >
       <% @temples.each do|temple| %>
       <li class="temple_thumbnail">
