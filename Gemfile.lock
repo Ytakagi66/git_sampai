@@ -50,6 +50,7 @@ GEM
     autoprefixer-rails (9.7.6)
       execjs
     aws-eventstream (1.1.0)
+<<<<<<< HEAD
     aws-partitions (1.296.0)
     aws-sdk (3.0.1)
       aws-sdk-resources (~> 3)
@@ -941,6 +942,15 @@ GEM
       aws-sdk-core (~> 3, >= 3.71.0)
       aws-sigv4 (~> 1.1)
     aws-sigv2 (1.0.1)
+=======
+    aws-sdk (2.11.486)
+      aws-sdk-resources (= 2.11.486)
+    aws-sdk-core (2.11.486)
+      aws-sigv4 (~> 1.0)
+      jmespath (~> 1.0)
+    aws-sdk-resources (2.11.486)
+      aws-sdk-core (= 2.11.486)
+>>>>>>> 9f1c854ae1fbe4596e69ba06f2b0697d2a627f2b
     aws-sigv4 (1.1.1)
       aws-eventstream (~> 1.0, >= 1.0.2)
     bcrypt (3.1.13)
@@ -1155,7 +1165,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
   aws-sdk
+=======
+  aws-sdk (~> 2)
+>>>>>>> 9f1c854ae1fbe4596e69ba06f2b0697d2a627f2b
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.3.1)
   byebug

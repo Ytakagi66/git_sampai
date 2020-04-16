@@ -5,7 +5,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   process resize_to_fit: [500, 500]
 
   # Choose what kind of storage to use for this uploader:
-  storage :file
+  # storage :file
   # storage :fog
 
   # Override the directory where uploaded files will be stored.
@@ -53,5 +53,8 @@ class ImageUploader < CarrierWave::Uploader::Base
   else
     storage :file
   end
+<<<<<<< HEAD
   
+=======
+>>>>>>> 9f1c854ae1fbe4596e69ba06f2b0697d2a627f2b
 end

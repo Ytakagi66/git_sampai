@@ -75,5 +75,9 @@ gem 'devise-i18n-views'
 gem 'carrierwave'
 gem 'mini_magick'
 
+<<<<<<< HEAD
 gem 'aws-sdk'
 gem 'fog-aws'
+=======
+gem 'fog'
+>>>>>>> 9f1c854ae1fbe4596e69ba06f2b0697d2a627f2b
