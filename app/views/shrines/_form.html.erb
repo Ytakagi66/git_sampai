@@ -18,7 +18,7 @@
         <h5>紹介したい神社の情報を以下項目に記載して紹介しましょう</h5>
       </div>
         <%= form.label :image, '画像の選択' %>
-        <%= form.file_field :image %>
+        <%= f.file_field :avatar_url %>
       <div class="field form-group">
         <%= form.label :name,"神社名" %>
         <%= form.text_field :name, class:"form-control", :placeholder => '神社名' %>
