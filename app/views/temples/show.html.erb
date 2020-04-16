@@ -4,7 +4,7 @@
         <%= image_tag @temple.image.url,class:"temple_img" %>      
         <div class="card-body">
           <h2 class="temple_name">■名称：<%= @temple[:name] %></h2>
-          <p class ="temple_word">■御本尊<br><span><%= @temple[:god] %></span></p>
+          <p class ="temple_word">■御本尊<br>　<span><%= @temple[:god] %></span></p>
           <p class ="temple_word">■御朱印：<span><%= @temple[:goshuin] %></span></p>
           <p class ="temple_word">■所在地：<span><%= @temple[:adress] %></span></p>    
           <p class ="temple_word">■URL：<span><%= link_to(@temple[:url],@temple[:url]) %></span></p>
