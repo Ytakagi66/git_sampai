@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  resources :explanatories
+  root to: "home#index" 
   devise_for :users, controllers: {
       sessions:      'users/sessions',
       passwords:     'users/passwords',
       registrations: 'users/registrations'
   }
-  root to: "home#index"
+  resources :users      
+  resources :explanatories  
   resources :shrines
   delete  'shrines/:id'  => 'shrines#destroy'  
   resources :temples
