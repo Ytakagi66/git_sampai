@@ -1,0 +1,30 @@
+<main>
+  <div class="devise">
+    <div class="login-form">
+    <p class="login-text">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-lock fa-stack-1x"></i>
+        </span>
+      新規登録
+    </p>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+  
+      <%= f.text_field :name,class:"login-username",placeholder: "Name" %>
+    
+      <%= f.email_field :email, autofocus: true, autocomplete: "email",class:"login-username",placeholder: "Email" %>
+      
+      <%= f.password_field :password, autocomplete: "new-password",class:"login-password",placeholder: "Password" %>
+  
+      <%= f.password_field :password_confirmation, autocomplete: "new-password",class:"login-password",placeholder: "Confirmation Password" %>
+  
+    <div class="actions">
+      <%= f.submit "Sign up",class:"login-submit" %>
+    </div>
+  <% end %>
+  
+  <%= render "users/shared/links" %>
+  </div>
+</div>
+</main>

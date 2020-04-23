@@ -1,0 +1,17 @@
+<%= form_with(model: explanatory, local: true) do |form| %>
+  <% if explanatory.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(explanatory.errors.count, "error") %> prohibited this explanatory from being saved:</h2>
+
+      <ul>
+      <% explanatory.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

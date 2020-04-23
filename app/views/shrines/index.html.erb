@@ -1,0 +1,39 @@
+<main>
+  <div class="shrine_index">
+  <div class="shrine_item">
+    <ul class="slider">
+      <% @shrines.each do|shrine| %>
+      <li>
+        <%= image_tag "/uploads/shrine/image/#{shrine[:id]}/#{shrine[:image]}" %>
+        <div class="shrine_infomation">
+          <h2 class="shrine_name">名称：<%= shrine[:name] %></h2>
+          <h3 class ="shrine_word">概要</h3>
+          <p class ="shrine_word"><%= simple_format(shrine[:article]) %></p>
+          <p class ="shrine_word">御祭神：<br><span><%= shrine[:god] %></span></p>
+          <p class ="shrine_word">御朱印：<span><%= shrine[:goshuin] %></span></p>
+          <p class ="shrine_word">所在地：<span><%= shrine[:adress] %></span></p>    
+          <p class ="shrine_word">URL:<span><%= link_to(shrine[:url],shrine[:url]) %></span></p>
+          <p></p>    
+        </div>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+  
+  <div class="shrine_slider_ttl">  
+    <h1 class="slider_ttl">神社一覧</h1>
+    <ul class="horizontal_scroll" >
+      <% @shrines.each do|shrine| %>
+      <li class="shrine_thumbnail">
+        <img id="mypic" onclick="slideshow()" src="<%= "/uploads/shrine/image/#{shrine[:id]}/#{shrine[:image]}" %>">
+        <%= link_to "shrines/#{shrine[:id]}", class:"shrine_photo" do %>
+          <span><%= shrine[:name] %></span>
+        <% end %>
+      </li>
+        <% end %>
+    </ul>
+  </div>
+  
+  <%= link_to '新規登録', new_shrine_path %>
+  </div>
+</main>

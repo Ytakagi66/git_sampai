@@ -1,0 +1,26 @@
+<main>
+  <div class="temple_show_all">
+    <div class="temple_show">
+        <%= image_tag @temple.image.url,class:"temple_img" %>      
+        <div class="card-body">
+          <h2 class="temple_name">■名称：<%= @temple[:name] %></h2>
+          <p class ="temple_word">■御本尊<br><span><%= @temple[:god] %></span></p>
+          <p class ="temple_word">■御朱印：<span><%= @temple[:goshuin] %></span></p>
+          <p class ="temple_word">■所在地：<span><%= @temple[:adress] %></span></p>    
+          <p class ="temple_word">■URL：<span><%= link_to(@temple[:url],@temple[:url]) %></span></p>
+          <h3 class ="temple_name">■概要</h3>
+          <div class ="temple_article">
+            <%= simple_format(@temple[:article]) %>
+          </div>
+          <div class="custom_link">
+            <%= link_to '編集', edit_temple_path(@temple), class: "btn btn-outline-primary" %>
+            <%= link_to '削除', @temple, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger" %>
+          </div>
+      </div>
+    </div>
+    <div class="show_link">  
+      <%= link_to '編集', edit_temple_path(@temple) %> |
+      <%= link_to '戻る', temples_path %>
+    </div>      
+  </div>     
+</main>

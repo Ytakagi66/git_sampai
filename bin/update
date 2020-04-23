@@ -1,10 +1,17 @@
 #!/usr/bin/env ruby
+<<<<<<< HEAD
 require 'pathname'
+=======
+>>>>>>> origin/master
 require 'fileutils'
 include FileUtils
 
 # path to your application root.
+<<<<<<< HEAD
 APP_ROOT = Pathname.new File.expand_path('../../', __FILE__)
+=======
+APP_ROOT = File.expand_path('..', __dir__)
+>>>>>>> origin/master
 
 def system!(*args)
   system(*args) || abort("\n== Command #{args} failed ==")
@@ -18,6 +25,12 @@ chdir APP_ROOT do
   system! 'gem install bundler --conservative'
   system('bundle check') || system!('bundle install')
 
+<<<<<<< HEAD
+=======
+  # Install JavaScript dependencies if using Yarn
+  # system('bin/yarn')
+
+>>>>>>> origin/master
   puts "\n== Updating database =="
   system! 'bin/rails db:migrate'
 
