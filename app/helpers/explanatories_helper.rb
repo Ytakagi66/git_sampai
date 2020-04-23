@@ -1,0 +1,2 @@
+module ExplanatoriesHelper
+end

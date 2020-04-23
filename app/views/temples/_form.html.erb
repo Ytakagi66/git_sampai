@@ -1,0 +1,59 @@
+<main>
+  <%= form_with(model: temple, local: true) do |form| %>
+    <% if temple.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(temple.errors.count, "error") %> prohibited this temple from being saved:</h2>
+  
+        <ul>
+        <% temple.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+    
+    <div class="container">
+      <div class="row header">
+        <h1>寺院情報の共有</h1>
+        <h5>紹介したい神社の情報を以下項目に記載して紹介しましょう</h5>
+      </div>
+        <%= form.label :image, '画像の選択' %>
+        <%= form.file_field :image %>
+      <div class="field form-group">
+        <%= form.label :name,"寺院名" %>
+        <%= form.text_field :name, class:"form-control", :placeholder => '寺院名' %>
+      </div>
+    
+      <div class="field form-group">
+        <%= form.label :adress,"所在地" %>
+        <%= form.text_field :adress, class:"form-control", :placeholder => '所在地'  %>
+      </div>
+    
+      <div class="field form-group">
+        <%= form.label :url ,"URL"%>
+        <%= form.text_field :url, class:"form-control", :placeholder => 'URL'  %>
+      </div>
+  
+      <div class="field form-group">
+        <%= form.label :article,"記事" %>
+        <%= form.text_area :article, class:"form-control", :placeholder => '記事'  %>
+      </div>
+      
+      <div class="field form-group">
+        <%= form.label :god,"祭神" %>
+        <%= form.text_area :god, class:"form-control", :placeholder => '祭神'  %>
+      </div>
+      
+      <div class="field form-group">
+        <%= form.label :goshuin,"御朱印有無" %>      
+      <%= form_for @temple do |f| %>
+         <%= f.select :goshuin, [["あり", "あり"], ["なし", "なし"]], include_blank: "選択して下さい" %>
+      <% end %>    
+      </div>
+      
+      <div class="actions">
+        <%= form.submit class: "btn btn-primary" %>
+      </div>
+    </div>
+  <% end %>
+</main>
