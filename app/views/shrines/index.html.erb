@@ -4,7 +4,7 @@
     <ul class="slider">
       <% @shrines.each do|shrine| %>
       <li>
-        <%= image_tag shrine.image.to_s %>
+        <%= image_tag shrine.image %>
         <div class="shrine_infomation">
           <h2 class="shrine_name">名称：<%= shrine[:name] %></h2>
           <h3 class ="shrine_word">概要</h3>
