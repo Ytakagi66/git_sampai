@@ -37,6 +37,7 @@ gem 'turbolinks', '~> 5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'fog-aws'
+gem 'aws-sdk-s3'
 
 group :development, :test do
   # Heroku 環境ではエラーが出るため使用しない
