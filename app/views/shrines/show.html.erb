@@ -1,7 +1,7 @@
 <main>
   <div class="shrine_show_all">
     <div class="shrine_show">
-        <%= image_tag @shrine.image.url ,class:"shrine_img" %>      
+        <%= image_tag user.image.to_s ,class:"shrine_img" %>      
         <div class="card-body">
           <h2 class="shrine_name">■名称：<%= @shrine[:name] %></h2>
           <p class ="shrine_word">■御祭神<br><span><%= @shrine[:god] %></span></p>
