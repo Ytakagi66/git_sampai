@@ -1,3 +1,4 @@
+<main>
 <%= form_with(model: shrine, local: true) do |form| %>
   <% if shrine.errors.any? %>
     <div id="error_explanation">
@@ -55,3 +56,4 @@
     </div>
   </div>
 <% end %>
+</main>

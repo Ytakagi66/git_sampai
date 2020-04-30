@@ -26,7 +26,7 @@ class ShrinesController < ApplicationController
   # POST /shrines
   # POST /shrines.json
   def create
-    @shrine = Shrine.new(shrine_params)
+    @shrine = Shrine.new
 
     respond_to do |format|
       if @shrine.save
