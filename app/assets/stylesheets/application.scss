@@ -27,10 +27,18 @@ main {
 
 header {
   height: 100px;
-  font-family: 'Vollkorn', serif;
-  font-size:20px;
+
   .navbar-brand{
-    font-size:30px;
+    font-size:25px;
+    font-family: 'Vollkorn', serif;
+  }
+  .nav-item{
+    font-size:20px;
+    font-family: 'Vollkorn', serif;
+  }
+  .grid-6{
+    font-size:20px;
+    font-family: 'Vollkorn', serif;    
   }
 }
 
