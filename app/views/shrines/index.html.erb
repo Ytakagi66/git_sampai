@@ -4,7 +4,7 @@
     <ul class="slider">
       <% @shrines.each do|shrine| %>
       <li>
-        <%= image_tag "/uploads/shrine/image/#{shrine[:id]}/#{shrine[:image]}" %>
+        <%= image_tag shrine.image.to_s %>
         <div class="shrine_infomation">
           <h2 class="shrine_name">名称：<%= shrine[:name] %></h2>
           <h3 class ="shrine_word">概要</h3>
@@ -25,7 +25,7 @@
     <ul class="horizontal_scroll" >
       <% @shrines.each do|shrine| %>
       <li class="shrine_thumbnail">
-        <img id="mypic" onclick="slideshow()" src="<%= "/uploads/shrine/image/#{shrine[:id]}/#{shrine[:image]}" %>">
+        <img id="mypic" onclick="slideshow()" src="<%= shrine.image.to_s %>">
         <%= link_to "shrines/#{shrine[:id]}", class:"shrine_photo" do %>
           <span><%= shrine[:name] %></span>
         <% end %>

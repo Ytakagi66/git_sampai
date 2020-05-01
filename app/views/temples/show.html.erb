@@ -1,7 +1,7 @@
 <main>
   <div class="temple_show_all">
     <div class="temple_show">
-        <%= image_tag @temple.image.url,class:"temple_img" %>      
+        <%= image_tag @temple.image.to_s,class:"temple_img" %>      
         <div class="card-body">
           <h2 class="temple_name">■名称：<%= @temple[:name] %></h2>
           <p class ="temple_word">■御本尊<br><span><%= @temple[:god] %></span></p>

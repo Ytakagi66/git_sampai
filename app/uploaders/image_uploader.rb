@@ -1,19 +1,12 @@
 class ImageUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
-  include CarrierWave::MiniMagick
-  process resize_to_fit: [500, 500]
+  # include CarrierWave::MiniMagick
 
-  if Rails.env.production?
-    storage :fog
-  else
-    storage :file
-  end
-  
   # Choose what kind of storage to use for this uploader:
-  # storage :file
-  storage :fog
-  
+  storage :file
+  # storage :fog
+
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
@@ -27,9 +20,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   #
   #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
   # end
-  def default_url
-    'board_placeholder.png'
-  end
+
   # Process files as they are uploaded:
   # process scale: [200, 300]
   #
@@ -53,5 +44,4 @@ class ImageUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
-  
 end
