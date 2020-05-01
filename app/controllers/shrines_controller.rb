@@ -57,6 +57,7 @@ class ShrinesController < ApplicationController
   # DELETE /shrines/1
   # DELETE /shrines/1.json
   def destroy
+    @shrine = Shrine.find(params[:id])
     @shrine.destroy
     respond_to do |format|
       format.html { redirect_to shrines_url, notice: '削除されました' }

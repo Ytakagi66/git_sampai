@@ -57,6 +57,7 @@ class TemplesController < ApplicationController
   # DELETE /temples/1
   # DELETE /temples/1.json
   def destroy
+    @temple = Temple.find(params[:id])
     @temple.destroy
     respond_to do |format|
       format.html { redirect_to temples_url, notice: '削除されました' }
