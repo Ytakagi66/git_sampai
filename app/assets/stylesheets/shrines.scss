@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.shrine_index .Headline{
+.Headline{
   font-family: 'Vollkorn', serif;
   margin-left:50px;
 }
@@ -87,6 +87,7 @@
   margin:0;
   padding:0;
   background-image:url('和柄.png');
+  font-family: '游明朝';
 }
 
 .shrine_item{
