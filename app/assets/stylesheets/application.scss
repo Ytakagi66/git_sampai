@@ -18,10 +18,16 @@ main {
   height:100%;
   overflow: hidden;
   margin-top: 100px;
+  font-family: 'Vollkorn', serif;
 }
 
 header {
   height: 100px;
+  font-family: 'Vollkorn', serif;
+  font-size:20px;
+  .navbar-brand{
+    font-size:30px;
+  }
 }
 
 footer {
