@@ -2,10 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-main {
-  overflow: hidden;
-  margin-top: 100px;
+.home{
   height:100%;
+}
 
 .home_main{
   width: 100%;
@@ -153,6 +152,7 @@ main {
   width:100vw;
   height:600px;
   background-image:url('Seigaiha.png');
+  position:absolute;
   
   
   .Home_Choice{
@@ -203,6 +203,8 @@ main {
 .overview{
     border: 4px double #ddd;
     padding: 0;
+    position:absolute;
+    top:1150px;
 
   .explanatories_slick_tab{
     width:100vw;
@@ -258,5 +260,4 @@ main {
       height:100vh;
       width:100vw;   
     }
-  }
 }
