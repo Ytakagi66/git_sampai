@@ -1,31 +1,31 @@
 <main>
   <div class="devise">
     <div class="login-form">
-      <p class="login-text">
+    <p class="login-text">
         <span class="fa-stack fa-lg">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-lock fa-stack-1x"></i>
         </span>
-        ログイン
-      </p>  
+      ろぐいん
+    </p>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
   
-      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'login-username',placeholder: "Email" %>
-      <%= f.hidden_field :email, value: 'admin@test.com' %>
-  
-      <%= f.password_field :password, autocomplete: "current-password",class: 'login-password',placeholder: "Password" %>
-      <%= f.hidden_field :password, value: 'password' %>
-      <% if devise_mapping.rememberable? %>
-        <div class="field">
-          <%= f.check_box :remember_me %>
-          <%= f.label :remember_me %>
-        </div>
-      <% end %>
-      <div class="actions">
-        <%= f.submit "Log in",class:"login-submit" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email",class:"login-username",placeholder: "Email" %>
+      <%= f.password_field :password, autocomplete: "new-password",class:"login-password",placeholder: "Password" %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password",class:"login-password",placeholder: "Confirmation Password" %>
+    <% if devise_mapping.rememberable? %>
+      <div class="field">
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me %>
       </div>
-      <% end %>
-      <%= render "users/shared/links" %>
+    <% end %>
+      
+    <div class="actions">
+      <%= f.submit "ろぐいん",class:"login-submit" %>
     </div>
+  <% end %>
+  <%= render "users/shared/links" %>
   </div>
+</div>
 </main>

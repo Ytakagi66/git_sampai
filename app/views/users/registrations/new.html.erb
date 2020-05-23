@@ -11,16 +11,12 @@
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
   
-      <%= f.text_field :name,class:"login-username",placeholder: "Name" %>
-    
       <%= f.email_field :email, autofocus: true, autocomplete: "email",class:"login-username",placeholder: "Email" %>
-      
       <%= f.password_field :password, autocomplete: "new-password",class:"login-password",placeholder: "Password" %>
-  
       <%= f.password_field :password_confirmation, autocomplete: "new-password",class:"login-password",placeholder: "Confirmation Password" %>
   
     <div class="actions">
-      <%= f.submit "Sign up",class:"login-submit" %>
+      <%= f.submit "とうろく",class:"login-submit" %>
     </div>
   <% end %>
   

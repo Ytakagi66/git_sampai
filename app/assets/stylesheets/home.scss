@@ -2,268 +2,259 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.home{
+
+}
+
 .home_main{
-  min-height: calc(100vh - 160px);  
+  width: 100%;
+  height: 550px;
   display: block;
   overflow: hidden;
-  margin: 100px auto 60px auto;
-  font-family: '游明朝';
-}
-
-body {
   margin: 0;
-  font-family: '游明朝';
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.top-wrapper {
-  margin: 150px 0 90px 0;
-  background-image: url(daijogu.jpg);
-  background-size: cover;
-  color: white;
-  text-align:center;
-}
-
-.top-wrapper::before {
-  background: inherit;
-  content: '';
-  filter: blur(4px);
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-}
-
-.top-wrapper h1 {
-  opacity: 0.9;
-  font-size: 55px;
-  letter-spacing: 5px;
-  font-weight:bold;
-}
-
-.top-wrapper h2 {
-  opacity: 0.9;
-  font-size: 30px;
-  letter-spacing: 5px;
-  margin-bottom:10px;
-}
-
-.shrine_color{
-  color:red;
-}
-
-.temple_color{
-  color: #333300;
-}
-
-.top-wrapper p {
-  opacity: 0.9;
-  margin:0;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.9;
-  border-radius:4px;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.login {
-  background-color: #3b5998;
-}
-
-.btn-wrapper {
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.selects{
-  margin:50px 50vh;
   
-}
-
-.select {
-  float: left;
-  width: 25%;
-  margin-right:150px;
-}
-
-.select-shrine {
-  position: relative;
-  margin-right:10px;
-}
-
-.select-temple {
-  position: relative;
-  margin-left:10px;
-  width:100%;
-  height:100%;
-}
-
-.select-shrine p {
-  margin-left:10px;
-  position: absolute;
-  top: 50px;
-  width: 150%;
-  color: white;
-  text-align: center;
-  left:20%;
-  font-size:50px;
-  color:gold;
-}
-
-.select-temple p {
-  margin-left:10px;
-  position: absolute;
-  top: 50px;
-  width: 150%;
-  color: white;
-  text-align: center;
-  left:20%;
-  font-size:50px;
-  color:gold;
-}
-
-.txt-contents {
-  width: 120%;
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 12px;
-  color: #b3aeb5;
-}
-
-
-/* 日本地図DOM */
-.japan_map{
-    height:500px;
-    width:546px;
+  .container {
+    width: 1170px;
+    padding: auto;
+    margin: auto;
+  }
+  
+  .top-wrapper {
+    margin: 150px 0 150px 0;
+    background-image: url(daijogu.jpg);
+    background-size: cover;
+    color: white;
+    text-align:center;
+  }
+  
+  .top-wrapper::before {
+    background: inherit;
+    content: '';
+    filter: blur(4px);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+  }
+  
+  .top-wrapper h1 {
+    opacity: 0.9;
+    font-size: 55px;
+    letter-spacing: 5px;
+    font-weight:bold;
+  }
+  
+  .top-wrapper h2 {
+    opacity: 0.9;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom:10px;
+  }
+  
+  .shrine_color{
+    color:red;
+  }
+  
+  .temple_color{
+    color: #333300;
+  }
+  
+  .top-wrapper p {
+    opacity: 0.9;
+    margin:0;
+  }
+  
+  .btn {
+    padding: 8px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.9;
+    border-radius:4px;
+  }
+  
+  .signup {
+    background-color: #239b76;
+  }
+  
+  .login {
+    background-color: #3b5998;
+  }
+  
+  .btn-wrapper {
+    margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+  
+  .selects{
+    margin:50px 50vh;
+    
+  }
+  
+  .select {
+    float: left;
+    width: 25%;
+    margin-right:150px;
+  }
+  
+  .select-shrine {
     position: relative;
-    box-sizing: border-box;
-    margin: 0 auto;
-    display: table;
-    background-color: #adf6ff;
-}
-/* 日本地図画像（スマホ対応用） */
-.japan_map img{
-    max-width: 100%;
-    height: auto;
-    border: 0;
-    // -webkit-backface-visibility: hidden;
-}
-/* 日本地図ボタン */
-.japan_map .area_btn{
+    margin-right:10px;
+  }
+  
+  .select-temple {
+    position: relative;
+    margin-left:10px;
+    width:100%;
+    height:100%;
+  }
+  
+  .select-shrine p {
+    margin-left:10px;
     position: absolute;
-    z-index: 1;
-    box-sizing: border-box;
-    cursor: pointer;
-    border: 3px solid #333333;
-    border-radius: 5px;
-    background-color: #FFF;
-    padding: 0.2em auto;
-    font-weight: bold;
+    top: 50px;
+    width: 150%;
+    color: white;
     text-align: center;
-    white-space: nowrap;
-}
-
-/* ボタン配置（使用する日本地図画像により微調整） */
-.japan_map .area_btn.area1{
-    top: 30%;
-    right: 0;
-    width: 30%;
-}
-.japan_map .area_btn.area2{
-    top: 58%;
-    right: 11%;
-    width: 13%;
-}
-.japan_map .area_btn.area3{
-    top: 56%;
-    right: 27.5%;
-    width: 13%;
-}
-.japan_map .area_btn.area4{
-    top: 65%;
-    right: 44%;
-    width: 13%;
-}
-.japan_map .area_btn.area5{
-    top: 52%;
-    left: 20%;
-    width: 25%;
-}
-.japan_map .area_btn.area6{
-    top: 70%;
-    left: 0;
-    width: 25%;
-}
-/* オーバーレイ */
-.japan_map .area_overlay{
-    display: none;
+    left:20%;
+    font-size:50px;
+    color:gold;
+  }
+  
+  .select-temple p {
+    margin-left:10px;
     position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    background-color: #111;
-    opacity: 0.5;
-    cursor: pointer;
+    top: 50px;
+    width: 150%;
+    color: white;
+    text-align: center;
+    left:20%;
+    font-size:50px;
+    color:gold;
+  }
+  
+  .txt-contents {
+    width: 120%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #b3aeb5;
+  }  
 }
 
-/* 選択前は表示を隠す */
-.japan_map .pref_area{
-    display: none;
-}
 
-/* 地域毎の都道府県リスト */
-.japan_map .pref_list{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    z-index: 3;
-    box-sizing: border-box;
-    display: -webkit-flex;
+
+//選択
+.select{
+  width:100vw;
+  height:600px;
+  background-image:url('Seigaiha.png');
+  
+  
+  .Home_Choice{
+    padding-left:50px;
+    color:#8B4513;
+    background-color:#FFFAFA;
+  }
+  
+  .select_choice{
+    width:100vw;
+    height:500px;
+    margin-top: 0;
+    position:relative;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: 90%;
-    background-color: #FFF;
-}
-.japan_map .pref_list > div{
-    box-sizing: border-box;
-    width: 50%;
-    border: 1px solid #CCC;
-    font-weight: bold;
-    text-align: center;
-    padding: 0.5em;
-    cursor: pointer;
+    
+    .Choice{
+      position:absolute;
+      bottom:60px;
+      margin-left:220px;
+      font-size:40px;
+      color:brown;
+      text-align:center;
+    }
+
+    .select_shrine p{
+      margin-left:300px;
+    }
+
+    .select_shrine img{
+      height: 85%;
+      width: 500px;
+      margin: 20px 25px 20px 90px;
+      border: 3px groove #800000;
+    }
+    
+    .select_temple img{
+      height: 85%;
+      width: 500px;    
+      margin: 20px 75px 20px 25px;
+      border: 3px groove #800000;
+      background-color:white;    
+    }
+  }  
 }
 
-@media screen and (max-width: 480px){
-    /* スマホユーザー向けにボタン文字サイズを調整 */
-    .japan_map .area_btn{
-        font-size: 4vw;
+
+//サイト概要
+.overview{
+    border: 4px double #ddd;
+    padding: 0;
+
+  .explanatories_slick_tab{
+    width:100vw;
+  }
+      .overview img {
+      position:absolute;
+      width:100%;
+      transform: scale(1.2);
+      transition: .8s cubic-bezier(.645, .045, .355, 1);
+    }
+    .slick-slide .top_caption {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #CCCC99;
+      border-left: 8px solid #808000;
+      margin: 10px 0;    
+      z-index: 2;
+      width: calc(100% - 1000px);
+      height: 80px;
+      padding-top: 10px;
+      color: #808000;
+      font-size: 40px;
+      opacity: 0;
+      transition: .3s ease;
+    }
+    
+    .slick-current .top_caption {
+      opacity: 1;
+      transition-delay: .5s;
+    }
+    
+    .slick-slide .caption {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+      width: 100%;
+      padding: 20px;
+      background: rgba(0, 0, 0, .6);
+      color: #fff;
+      font-size: 17px;
+      opacity: 0;
+      transition: .3s ease;
+    }
+    
+    .slick-current .caption {
+      opacity: 1;
+      transition-delay: .5s;
+    }
+    
+    .slick-slider .slick-track, .slick-slider .slick-list{
+      height:100vh;
+      width:100vw;   
     }
 }
