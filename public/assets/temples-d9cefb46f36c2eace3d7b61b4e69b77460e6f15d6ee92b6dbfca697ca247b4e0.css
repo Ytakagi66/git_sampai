@@ -1,0 +1,361 @@
+@charset "UTF-8";
+/* line 5, app/assets/stylesheets/temples.scss */
+.temple_index .Headline {
+  font-family: 'Vollkorn', serif;
+  margin-left: 50px;
+}
+
+/* 横スクロール */
+/* line 11, app/assets/stylesheets/temples.scss */
+.horizontal_scroll {
+  overflow-x: scroll;
+  display: flex;
+}
+
+/* line 16, app/assets/stylesheets/temples.scss */
+.horizontal_scroll > li {
+  width: 100%;
+  max-width: 140px;
+  list-style: none;
+}
+
+/* line 22, app/assets/stylesheets/temples.scss */
+.temple_thumbnail {
+  max-width: 140px;
+  margin: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 28, app/assets/stylesheets/temples.scss */
+  .horizontal_scroll > li {
+    min-width: inherit;
+  }
+}
+
+/* line 33, app/assets/stylesheets/temples.scss */
+.horizontal_scroll > li:not(:last-child) {
+  margin-right: 5px;
+}
+
+/* line 36, app/assets/stylesheets/temples.scss */
+.horizontal_scroll > li:last-child {
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 40, app/assets/stylesheets/temples.scss */
+  .horizontal_scroll > li:last-child {
+    padding-right: 0;
+  }
+}
+
+/* line 43, app/assets/stylesheets/temples.scss */
+.horizontal_scroll img {
+  vertical-align: bottom;
+  max-height: 140px;
+  max-width: 140px;
+  margin: 0 5px;
+}
+
+/* line 52, app/assets/stylesheets/temples.scss */
+.temple_new_form {
+  background-image: url("KUMAKICHI1027540_TP_V.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 58, app/assets/stylesheets/temples.scss */
+.temple_new_form .container {
+  max-width: 510px;
+  min-width: 324px;
+  padding-top: 20px;
+  background-color: white;
+  border: 1px solid #838383;
+  border-bottom: 3px solid grey;
+  background-image: url("KUMAKICHI1027540_TP_V.jpg");
+  color: white;
+}
+
+/* line 69, app/assets/stylesheets/temples.scss */
+.temple_new_form .row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+
+/* line 73, app/assets/stylesheets/temples.scss */
+.temple_new_form .row.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid grey;
+  background: url("IMG_20190914_191108_273.jpg");
+  background-size: cover;
+  color: white;
+}
+
+/* line 84, app/assets/stylesheets/temples.scss */
+.temple_index {
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("和柄.png");
+}
+
+/* line 92, app/assets/stylesheets/temples.scss */
+.temple_item {
+  min-width: 1100px;
+  width: 1100px;
+  min-height: 370px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  bottom: 50px;
+}
+
+/* line 104, app/assets/stylesheets/temples.scss */
+.temple_word {
+  font-size: 14px;
+}
+
+/* line 106, app/assets/stylesheets/temples.scss */
+.temple_word span {
+  font-size: 14px;
+}
+
+/* line 110, app/assets/stylesheets/temples.scss */
+.temple_word .temple_infomation {
+  position: absolute;
+  width: 600px;
+  height: 100%;
+  float: right;
+  margin-left: 410px;
+}
+
+/* line 116, app/assets/stylesheets/temples.scss */
+.temple_word .temple_infomation p {
+  text-align: left;
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+/* line 121, app/assets/stylesheets/temples.scss */
+.temple_word .temple_infomation h2, .temple_word .temple_infomation h3 {
+  color: #000;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+/* line 127, app/assets/stylesheets/temples.scss */
+.temple_word .temple_infomation h3 {
+  font-size: 18px;
+}
+
+/* line 135, app/assets/stylesheets/temples.scss */
+.item-photo {
+  color: #333333;
+  list-style: none;
+  margin: 0 0 0 15px;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  float: left;
+  width: 228px;
+}
+
+/* line 148, app/assets/stylesheets/temples.scss */
+.item-mainImg {
+  color: #333333;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 5px;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 228px;
+  height: 100%;
+  background-color: #fff;
+  float: left;
+}
+
+/* line 166, app/assets/stylesheets/temples.scss */
+.item-thumbs {
+  display: flex;
+  float: right;
+  list-style-type: none;
+}
+
+/* line 172, app/assets/stylesheets/temples.scss */
+.temple_slider_ttl {
+  width: 1200px;
+  min-height: 261px;
+  height: 100%;
+  margin: 15px auto;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+/* タイトル */
+/* line 181, app/assets/stylesheets/temples.scss */
+.slider_ttl {
+  color: #333;
+  text-align: inherit;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: inherit;
+  margin: 0 0 10px 0;
+  background-color: #e5e5e5;
+  text-indent: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+/* 名前 */
+/* line 196, app/assets/stylesheets/temples.scss */
+.temple_name {
+  color: #bf0000;
+  line-height: 1.65;
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+/* line 202, app/assets/stylesheets/temples.scss */
+.temple_photo {
+  width: 140px;
+  height: 100%;
+  list-style: none;
+  margin: 0 5px;
+  float: left;
+}
+
+/* line 210, app/assets/stylesheets/temples.scss */
+.temple_photo::after {
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 225, app/assets/stylesheets/temples.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 231, app/assets/stylesheets/temples.scss */
+.temple_edit_form {
+  background-image: url("KUMAKICHI1027540_TP_V.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 237, app/assets/stylesheets/temples.scss */
+.temple_edit_form .container {
+  max-width: 510px;
+  min-width: 324px;
+  padding-top: 20px;
+  background-color: white;
+  border: 1px solid #838383;
+  border-bottom: 3px solid grey;
+  background-image: url("KUMAKICHI1027540_TP_V.jpg");
+  color: white;
+}
+
+/* line 248, app/assets/stylesheets/temples.scss */
+.temple_edit_form .row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+
+/* line 252, app/assets/stylesheets/temples.scss */
+.temple_edit_form .row.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid grey;
+  background: url("IMG_20190914_191108_273.jpg");
+  background-size: cover;
+  color: white;
+}
+
+/* line 263, app/assets/stylesheets/temples.scss */
+.temple_show_all {
+  height: 100%;
+  width: 100%;
+  background-image: url("和柄.png");
+}
+
+/* line 269, app/assets/stylesheets/temples.scss */
+.temple_show {
+  min-height: calc(100vh - 120px);
+  height: calc(100% - 100px);
+  margin: 10px 100px;
+  position: relative;
+  border: 2px solid #ccc;
+}
+
+/* line 276, app/assets/stylesheets/temples.scss */
+.temple_show .col-md-4 {
+  margin-left: 100px;
+}
+
+/* line 279, app/assets/stylesheets/temples.scss */
+.temple_show .card-body {
+  position: absolute;
+  left: 500px;
+  width: 500px;
+  height: 500px;
+  margin-left: 15px;
+}
+
+/* line 286, app/assets/stylesheets/temples.scss */
+.temple_show .card-body .temple_article {
+  border: 2px solid #ccc;
+  height: 200px;
+  width: 515px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+/* line 294, app/assets/stylesheets/temples.scss */
+.temple_show .temple_img {
+  width: 500px;
+  height: 500px;
+  margin: 15px;
+  float: left;
+  border: 2px solid #CCC;
+  border-radius: 30px;
+}
+
+/* line 303, app/assets/stylesheets/temples.scss */
+.temple_show .custom_link {
+  position: absolute;
+}
+
+/* line 306, app/assets/stylesheets/temples.scss */
+.temple_show .show_link {
+  position: absolute;
+  float: left;
+  top: calc(100% - 30px);
+}
+
+/* line 315, app/assets/stylesheets/temples.scss */
+.row no-gutters {
+  background-color: black;
+}
