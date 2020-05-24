@@ -1,0 +1,1660 @@
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 18, app/assets/stylesheets/application.scss */
+* {
+  font-family: '游明朝';
+}
+
+/* line 22, app/assets/stylesheets/application.scss */
+main {
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+/* line 27, app/assets/stylesheets/application.scss */
+header {
+  height: 100px;
+}
+
+/* line 30, app/assets/stylesheets/application.scss */
+header .navbar-brand {
+  font-size: 25px;
+}
+
+/* line 33, app/assets/stylesheets/application.scss */
+header .nav-item {
+  font-size: 20px;
+}
+
+/* line 36, app/assets/stylesheets/application.scss */
+header .grid-6 {
+  font-size: 20px;
+}
+
+/* line 41, app/assets/stylesheets/application.scss */
+footer {
+  bottom: 0;
+  height: 60px;
+  text-align: center;
+  background-color: black;
+  color: #FFF;
+}
+
+/* line 49, app/assets/stylesheets/application.scss */
+body {
+  height: 100%;
+  width: 100%;
+}
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+/* line 4, app/assets/stylesheets/devise.scss */
+.field_with_errors {
+  display: contents;
+}
+
+/* line 9, app/assets/stylesheets/devise.scss */
+input ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 12, app/assets/stylesheets/devise.scss */
+input ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 15, app/assets/stylesheets/devise.scss */
+input :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 18, app/assets/stylesheets/devise.scss */
+input:focus {
+  outline: 0 transparent solid;
+}
+
+/* line 20, app/assets/stylesheets/devise.scss */
+input:focus ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 23, app/assets/stylesheets/devise.scss */
+input:focus ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 26, app/assets/stylesheets/devise.scss */
+input:focus :-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 32, app/assets/stylesheets/devise.scss */
+.devise {
+  height: 100%;
+  display: block;
+  min-height: calc(100vh - 160px);
+  overflow: hidden;
+  background-image: url("竜安寺枯山水20190913_150314.jpg");
+  background-size: cover;
+}
+
+/* line 41, app/assets/stylesheets/devise.scss */
+.login-form {
+  margin: 100px auto;
+  max-width: 50%;
+  padding: .5rem;
+  text-align: center;
+}
+
+/* line 48, app/assets/stylesheets/devise.scss */
+.login-text {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  max-width: 50%;
+  padding: .5rem;
+}
+
+/* line 54, app/assets/stylesheets/devise.scss */
+.login-text .fa-stack-1x {
+  color: black;
+}
+
+/* line 59, app/assets/stylesheets/devise.scss */
+.login-username, .login-password {
+  background: transparent;
+  border: 0 solid;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  display: block;
+  margin: 1rem;
+  padding: .5rem;
+  transition: 250ms background ease-in;
+  width: calc(100% - 3rem);
+}
+
+/* line 69, app/assets/stylesheets/devise.scss */
+.login-username:focus, .login-password:focus {
+  background: white;
+  color: black;
+  transition: 250ms background ease-in;
+}
+
+/* line 76, app/assets/stylesheets/devise.scss */
+.login-forgot-pass {
+  bottom: 10;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 75%;
+  left: 0;
+  opacity: 0.6;
+  padding: .5rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 88, app/assets/stylesheets/devise.scss */
+.login-forgot-pass:hover {
+  opacity: 1;
+}
+
+/* line 93, app/assets/stylesheets/devise.scss */
+.login-forgot-pass {
+  bottom: 10;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 75%;
+  left: 0;
+  opacity: 0.6;
+  padding: .5rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 105, app/assets/stylesheets/devise.scss */
+.login-forgot-pass:hover {
+  opacity: 1;
+}
+
+/* line 110, app/assets/stylesheets/devise.scss */
+.login-submit {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  display: block;
+  margin: 1rem auto;
+  min-width: 1px;
+  padding: .25rem;
+  transition: 250ms background ease-in;
+  width: 100px;
+}
+
+/* line 120, app/assets/stylesheets/devise.scss */
+.login-submit:hover, .login-submit:focus {
+  background: white;
+  color: black;
+  transition: 250ms background ease-in;
+}
+
+/* line 130, app/assets/stylesheets/devise.scss */
+[class*=underlay] {
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+/* line 137, app/assets/stylesheets/devise.scss */
+.underlay-photo {
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  -webkit-animation: hue-rotate 6s infinite;
+          animation: hue-rotate 6s infinite;
+  background-image: url("竜安寺枯山水20190913_150314.jpg");
+  background-size: cover;
+  -webkit-filter: grayscale(30%);
+  z-index: -1;
+}
+
+/* line 149, app/assets/stylesheets/devise.scss */
+.underlay-black {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+@-webkit-keyframes hue-rotate {
+  from {
+    -webkit-filter: grayscale(30%) hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: grayscale(30%) hue-rotate(360deg);
+  }
+}
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: grayscale(30%) hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: grayscale(30%) hue-rotate(360deg);
+  }
+}
+/* line 5, app/assets/stylesheets/explanatories.scss */
+.explanatories_slick_tab {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* line 9, app/assets/stylesheets/explanatories.scss */
+.explanatories_slick_tab .slick-slide img {
+  min-height: 100vh;
+  min-width: 100vw;
+  transform: scale(1.2);
+  transition: 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* line 15, app/assets/stylesheets/explanatories.scss */
+.explanatories_slick_tab .slick-slide .caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: calc(100% - 40px);
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 17px;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+/* line 29, app/assets/stylesheets/explanatories.scss */
+.explanatories_slick_tab .slick-current .caption {
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+/* line 34, app/assets/stylesheets/explanatories.scss */
+.explanatories_slick_tab .slick-slider .slick-track, .explanatories_slick_tab .slick-slider .slick-list {
+  height: 100vh;
+  width: 100vw;
+}
+/* line 5, app/assets/stylesheets/home.scss */
+.home {
+  height: 100%;
+}
+
+/* line 9, app/assets/stylesheets/home.scss */
+.home_main {
+  width: 100%;
+  height: 550px;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* line 16, app/assets/stylesheets/home.scss */
+.home_main .container {
+  width: 1170px;
+  padding: auto;
+  margin: auto;
+}
+
+/* line 22, app/assets/stylesheets/home.scss */
+.home_main .top-wrapper {
+  margin: 150px 0 150px 0;
+  background-image: url(daijogu.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+/* line 30, app/assets/stylesheets/home.scss */
+.home_main .top-wrapper::before {
+  background: inherit;
+  content: '';
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+}
+
+/* line 41, app/assets/stylesheets/home.scss */
+.home_main .top-wrapper h1 {
+  opacity: 0.9;
+  font-size: 55px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+/* line 48, app/assets/stylesheets/home.scss */
+.home_main .top-wrapper h2 {
+  opacity: 0.9;
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+/* line 55, app/assets/stylesheets/home.scss */
+.home_main .shrine_color {
+  color: red;
+}
+
+/* line 59, app/assets/stylesheets/home.scss */
+.home_main .temple_color {
+  color: #333300;
+}
+
+/* line 63, app/assets/stylesheets/home.scss */
+.home_main .top-wrapper p {
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* line 68, app/assets/stylesheets/home.scss */
+.home_main .btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.9;
+  border-radius: 4px;
+}
+
+/* line 76, app/assets/stylesheets/home.scss */
+.home_main .signup {
+  background-color: #239b76;
+}
+
+/* line 80, app/assets/stylesheets/home.scss */
+.home_main .login {
+  background-color: #3b5998;
+}
+
+/* line 84, app/assets/stylesheets/home.scss */
+.home_main .btn-wrapper {
+  margin: 20px 0;
+}
+
+/* line 88, app/assets/stylesheets/home.scss */
+.home_main .btn-wrapper p {
+  margin: 10px 0;
+}
+
+/* line 92, app/assets/stylesheets/home.scss */
+.home_main .selects {
+  margin: 50px 50vh;
+}
+
+/* line 97, app/assets/stylesheets/home.scss */
+.home_main .select {
+  float: left;
+  width: 25%;
+  margin-right: 150px;
+}
+
+/* line 103, app/assets/stylesheets/home.scss */
+.home_main .select-shrine {
+  position: relative;
+  margin-right: 10px;
+}
+
+/* line 108, app/assets/stylesheets/home.scss */
+.home_main .select-temple {
+  position: relative;
+  margin-left: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 115, app/assets/stylesheets/home.scss */
+.home_main .select-shrine p {
+  margin-left: 10px;
+  position: absolute;
+  top: 50px;
+  width: 150%;
+  color: white;
+  text-align: center;
+  left: 20%;
+  font-size: 50px;
+  color: gold;
+}
+
+/* line 127, app/assets/stylesheets/home.scss */
+.home_main .select-temple p {
+  margin-left: 10px;
+  position: absolute;
+  top: 50px;
+  width: 150%;
+  color: white;
+  text-align: center;
+  left: 20%;
+  font-size: 50px;
+  color: gold;
+}
+
+/* line 139, app/assets/stylesheets/home.scss */
+.home_main .txt-contents {
+  width: 120%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b3aeb5;
+}
+
+/* line 151, app/assets/stylesheets/home.scss */
+.select {
+  width: 100vw;
+  height: 600px;
+  background-image: url("Seigaiha.png");
+  position: absolute;
+}
+
+/* line 158, app/assets/stylesheets/home.scss */
+.select .Home_Choice {
+  padding-left: 50px;
+  color: #8B4513;
+  background-color: #FFFAFA;
+}
+
+/* line 164, app/assets/stylesheets/home.scss */
+.select .select_choice {
+  width: 100vw;
+  height: 500px;
+  margin-top: 0;
+  position: relative;
+  display: flex;
+}
+
+/* line 171, app/assets/stylesheets/home.scss */
+.select .select_choice .Choice {
+  position: absolute;
+  bottom: 60px;
+  margin-left: 220px;
+  font-size: 40px;
+  color: brown;
+  text-align: center;
+}
+
+/* line 180, app/assets/stylesheets/home.scss */
+.select .select_choice .select_shrine p {
+  margin-left: 300px;
+}
+
+/* line 184, app/assets/stylesheets/home.scss */
+.select .select_choice .select_shrine img {
+  height: 85%;
+  width: 500px;
+  margin: 20px 25px 20px 90px;
+  border: 3px groove #800000;
+}
+
+/* line 191, app/assets/stylesheets/home.scss */
+.select .select_choice .select_temple img {
+  height: 85%;
+  width: 500px;
+  margin: 20px 75px 20px 25px;
+  border: 3px groove #800000;
+  background-color: white;
+}
+
+/* line 203, app/assets/stylesheets/home.scss */
+.overview {
+  border: 4px double #ddd;
+  padding: 0;
+  position: absolute;
+  top: 1150px;
+}
+
+/* line 209, app/assets/stylesheets/home.scss */
+.overview .explanatories_slick_tab {
+  width: 100vw;
+}
+
+/* line 212, app/assets/stylesheets/home.scss */
+.overview .overview img {
+  position: absolute;
+  width: 100%;
+  transform: scale(1.2);
+  transition: 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* line 218, app/assets/stylesheets/home.scss */
+.overview .slick-slide .top_caption {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #CCCC99;
+  border-left: 8px solid #808000;
+  margin: 10px 0;
+  z-index: 2;
+  width: calc(100% - 1000px);
+  height: 80px;
+  padding-top: 10px;
+  color: #808000;
+  font-size: 40px;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+/* line 235, app/assets/stylesheets/home.scss */
+.overview .slick-current .top_caption {
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+/* line 240, app/assets/stylesheets/home.scss */
+.overview .slick-slide .caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 17px;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+/* line 254, app/assets/stylesheets/home.scss */
+.overview .slick-current .caption {
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+/* line 259, app/assets/stylesheets/home.scss */
+.overview .slick-slider .slick-track, .overview .slick-slider .slick-list {
+  height: 100vh;
+  width: 100vw;
+}
+/* line 2, app/assets/stylesheets/scaffolds.scss */
+.field_with_errors > * {
+  border-color: red !important;
+}
+
+/* line 7, app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+/* line 13, app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+/* line 23, app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+@charset "UTF-8";
+/* line 5, app/assets/stylesheets/shrines.scss */
+.Headline {
+  font-family: 'Vollkorn', serif;
+  margin-left: 50px;
+}
+
+/* 横スクロール */
+/* line 11, app/assets/stylesheets/shrines.scss */
+.horizontal_scroll {
+  overflow-x: scroll;
+  display: flex;
+}
+
+/* line 16, app/assets/stylesheets/shrines.scss */
+.horizontal_scroll > li {
+  width: 100%;
+  max-width: 140px;
+  list-style: none;
+}
+
+/* line 22, app/assets/stylesheets/shrines.scss */
+.shrine_thumbnail {
+  max-width: 140px;
+  margin: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 28, app/assets/stylesheets/shrines.scss */
+  .horizontal_scroll > li {
+    min-width: inherit;
+  }
+}
+
+/* line 33, app/assets/stylesheets/shrines.scss */
+.horizontal_scroll > li:not(:last-child) {
+  margin-right: 5px;
+}
+
+/* line 36, app/assets/stylesheets/shrines.scss */
+.horizontal_scroll > li:last-child {
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 40, app/assets/stylesheets/shrines.scss */
+  .horizontal_scroll > li:last-child {
+    padding-right: 0;
+  }
+}
+
+/* line 43, app/assets/stylesheets/shrines.scss */
+.horizontal_scroll img {
+  vertical-align: bottom;
+  max-height: 140px;
+  max-width: 140px;
+  margin: 0 5px;
+}
+
+/* line 52, app/assets/stylesheets/shrines.scss */
+.shrine_new_form {
+  background-image: url("KUMAKICHI1027540_TP_V.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 58, app/assets/stylesheets/shrines.scss */
+.shrine_new_form .container {
+  max-width: 510px;
+  min-width: 324px;
+  padding-top: 20px;
+  background-color: white;
+  border: 1px solid #838383;
+  border-bottom: 3px solid grey;
+  background-image: url("KUMAKICHI1027540_TP_V.jpg");
+  color: white;
+}
+
+/* line 69, app/assets/stylesheets/shrines.scss */
+.shrine_new_form .row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+
+/* line 73, app/assets/stylesheets/shrines.scss */
+.shrine_new_form .row.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid grey;
+  background: url("IMG_20190914_191108_273.jpg");
+  background-size: cover;
+  color: white;
+}
+
+/* line 84, app/assets/stylesheets/shrines.scss */
+.shrine_index {
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("和柄.png");
+  font-family: '游明朝';
+}
+
+/* line 93, app/assets/stylesheets/shrines.scss */
+.shrine_item {
+  min-width: 1100px;
+  width: 1100px;
+  min-height: 370px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  bottom: 50px;
+}
+
+/* line 105, app/assets/stylesheets/shrines.scss */
+.shrine_word {
+  font-size: 14px;
+}
+
+/* line 107, app/assets/stylesheets/shrines.scss */
+.shrine_word span {
+  font-size: 14px;
+}
+
+/* line 111, app/assets/stylesheets/shrines.scss */
+.shrine_word .shrine_infomation {
+  position: absolute;
+  width: 600px;
+  height: 100%;
+  float: right;
+  margin-left: 410px;
+}
+
+/* line 118, app/assets/stylesheets/shrines.scss */
+.shrine_word .shrine_infomation p {
+  text-align: left;
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+/* line 123, app/assets/stylesheets/shrines.scss */
+.shrine_word .shrine_infomation h2, .shrine_word .shrine_infomation h3 {
+  color: #000;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+/* line 129, app/assets/stylesheets/shrines.scss */
+.shrine_word .shrine_infomation h3 {
+  font-size: 18px;
+}
+
+/* line 137, app/assets/stylesheets/shrines.scss */
+.item-photo {
+  color: #333333;
+  list-style: none;
+  margin: 0 0 0 15px;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  float: left;
+  width: 228px;
+}
+
+/* line 150, app/assets/stylesheets/shrines.scss */
+.item-mainImg {
+  color: #333333;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 5px;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 228px;
+  height: 100%;
+  background-color: #fff;
+  float: left;
+}
+
+/* line 168, app/assets/stylesheets/shrines.scss */
+.item-thumbs {
+  display: flex;
+  float: right;
+  list-style-type: none;
+}
+
+/* line 174, app/assets/stylesheets/shrines.scss */
+.shrine_slider_ttl {
+  width: 1200px;
+  min-height: 261px;
+  height: 100%;
+  margin: 15px auto;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+/* タイトル */
+/* line 183, app/assets/stylesheets/shrines.scss */
+.slider_ttl {
+  color: #333;
+  text-align: inherit;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: inherit;
+  margin: 0 0 10px 0;
+  background-color: #e5e5e5;
+  text-indent: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+/* 名前 */
+/* line 198, app/assets/stylesheets/shrines.scss */
+.shrine_name {
+  color: #bf0000;
+  line-height: 1.65;
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+/* line 204, app/assets/stylesheets/shrines.scss */
+.shrine_photo {
+  width: 140px;
+  height: 100%;
+  list-style: none;
+  margin: 0 5px;
+  float: left;
+}
+
+/* line 212, app/assets/stylesheets/shrines.scss */
+.shrine_photo::after {
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 227, app/assets/stylesheets/shrines.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 233, app/assets/stylesheets/shrines.scss */
+.shrine_edit_form {
+  background-image: url("KUMAKICHI1027540_TP_V.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 239, app/assets/stylesheets/shrines.scss */
+.shrine_edit_form .container {
+  max-width: 510px;
+  min-width: 324px;
+  padding-top: 20px;
+  background-color: white;
+  border: 1px solid #838383;
+  border-bottom: 3px solid grey;
+  background-image: url("KUMAKICHI1027540_TP_V.jpg");
+  color: white;
+}
+
+/* line 250, app/assets/stylesheets/shrines.scss */
+.shrine_edit_form .row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+
+/* line 254, app/assets/stylesheets/shrines.scss */
+.shrine_edit_form .row.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid grey;
+  background: url("IMG_20190914_191108_273.jpg");
+  background-size: cover;
+  color: white;
+}
+
+/* line 265, app/assets/stylesheets/shrines.scss */
+.shrine_show_all {
+  height: 100%;
+  width: 100%;
+  background-image: url("和柄.png");
+}
+
+/* line 271, app/assets/stylesheets/shrines.scss */
+.shrine_show {
+  min-height: calc(100vh - 120px);
+  height: calc(100% - 100px);
+  margin: 10px 100px;
+  position: relative;
+  border: 2px solid #ccc;
+}
+
+/* line 278, app/assets/stylesheets/shrines.scss */
+.shrine_show .col-md-4 {
+  margin-left: 100px;
+}
+
+/* line 281, app/assets/stylesheets/shrines.scss */
+.shrine_show .card-body {
+  position: absolute;
+  left: 500px;
+  width: 500px;
+  height: 500px;
+  margin-left: 15px;
+}
+
+/* line 288, app/assets/stylesheets/shrines.scss */
+.shrine_show .card-body .shrine_article {
+  border: 2px solid #ccc;
+  height: 200px;
+  width: 515px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+/* line 296, app/assets/stylesheets/shrines.scss */
+.shrine_show .shrine_img {
+  width: 500px;
+  height: 500px;
+  margin: 15px;
+  float: left;
+  border: 2px solid #CCC;
+  border-radius: 30px;
+}
+
+/* line 305, app/assets/stylesheets/shrines.scss */
+.shrine_show .custom_link {
+  position: absolute;
+}
+
+/* line 308, app/assets/stylesheets/shrines.scss */
+.shrine_show .show_link {
+  position: absolute;
+  float: left;
+  top: calc(100% - 30px);
+}
+
+/* line 317, app/assets/stylesheets/shrines.scss */
+.row no-gutters {
+  background-color: black;
+}
+@charset "UTF-8";
+/* Slider */
+/* line 45, app/assets/stylesheets/slick-theme.scss */
+.slick-loading .slick-list {
+  background: #fff url(/images/ajax-loader.gif) center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url(/fonts/slick.eot);
+  src: url(/fonts/slick.eot?#iefix) format("embedded-opentype"), url(/fonts/slick.woff) format("woff"), url(/fonts/slick.ttf) format("truetype"), url(/fonts/slick.svg#slick) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Arrows */
+/* line 63, app/assets/stylesheets/slick-theme.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* line 81, app/assets/stylesheets/slick-theme.scss */
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+
+/* line 85, app/assets/stylesheets/slick-theme.scss */
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+/* line 89, app/assets/stylesheets/slick-theme.scss */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+/* line 92, app/assets/stylesheets/slick-theme.scss */
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 103, app/assets/stylesheets/slick-theme.scss */
+.slick-prev {
+  left: -25px;
+}
+
+/* line 105, app/assets/stylesheets/slick-theme.scss */
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: -25px;
+}
+
+/* line 109, app/assets/stylesheets/slick-theme.scss */
+.slick-prev:before {
+  content: "←";
+}
+
+/* line 111, app/assets/stylesheets/slick-theme.scss */
+[dir="rtl"] .slick-prev:before {
+  content: "→";
+}
+
+/* line 117, app/assets/stylesheets/slick-theme.scss */
+.slick-next {
+  right: -25px;
+}
+
+/* line 119, app/assets/stylesheets/slick-theme.scss */
+[dir="rtl"] .slick-next {
+  left: -25px;
+  right: auto;
+}
+
+/* line 123, app/assets/stylesheets/slick-theme.scss */
+.slick-next:before {
+  content: "→";
+}
+
+/* line 125, app/assets/stylesheets/slick-theme.scss */
+[dir="rtl"] .slick-next:before {
+  content: "←";
+}
+
+/* Dots */
+/* line 133, app/assets/stylesheets/slick-theme.scss */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 137, app/assets/stylesheets/slick-theme.scss */
+.slick-dots {
+  position: absolute;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 145, app/assets/stylesheets/slick-theme.scss */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 153, app/assets/stylesheets/slick-theme.scss */
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* line 165, app/assets/stylesheets/slick-theme.scss */
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+
+/* line 167, app/assets/stylesheets/slick-theme.scss */
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+/* line 171, app/assets/stylesheets/slick-theme.scss */
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 188, app/assets/stylesheets/slick-theme.scss */
+.slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 0.75;
+}
+/* Slider */
+/* line 4, app/assets/stylesheets/slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 18, app/assets/stylesheets/slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 25, app/assets/stylesheets/slick.scss */
+.slick-list:focus {
+  outline: none;
+}
+
+/* line 29, app/assets/stylesheets/slick.scss */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 34, app/assets/stylesheets/slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 43, app/assets/stylesheets/slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* line 51, app/assets/stylesheets/slick.scss */
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+/* line 57, app/assets/stylesheets/slick.scss */
+.slick-track:after {
+  clear: both;
+}
+
+/* line 61, app/assets/stylesheets/slick.scss */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 65, app/assets/stylesheets/slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  width: 1100px;
+  display: none;
+}
+
+/* line 70, app/assets/stylesheets/slick.scss */
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+/* line 73, app/assets/stylesheets/slick.scss */
+.slick-slide img {
+  display: block;
+  height: 350px;
+  width: 400px;
+  margin: 10px;
+  float: left;
+}
+
+/* line 80, app/assets/stylesheets/slick.scss */
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+/* line 86, app/assets/stylesheets/slick.scss */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+/* line 90, app/assets/stylesheets/slick.scss */
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+/* line 94, app/assets/stylesheets/slick.scss */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+/* line 98, app/assets/stylesheets/slick.scss */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 104, app/assets/stylesheets/slick.scss */
+.slick-arrow.slick-hidden {
+  display: none;
+}
+@charset "UTF-8";
+/* line 5, app/assets/stylesheets/temples.scss */
+.temple_index .Headline {
+  font-family: 'Vollkorn', serif;
+  margin-left: 50px;
+}
+
+/* 横スクロール */
+/* line 11, app/assets/stylesheets/temples.scss */
+.horizontal_scroll {
+  overflow-x: scroll;
+  display: flex;
+}
+
+/* line 16, app/assets/stylesheets/temples.scss */
+.horizontal_scroll > li {
+  width: 100%;
+  max-width: 140px;
+  list-style: none;
+}
+
+/* line 22, app/assets/stylesheets/temples.scss */
+.temple_thumbnail {
+  max-width: 140px;
+  margin: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 28, app/assets/stylesheets/temples.scss */
+  .horizontal_scroll > li {
+    min-width: inherit;
+  }
+}
+
+/* line 33, app/assets/stylesheets/temples.scss */
+.horizontal_scroll > li:not(:last-child) {
+  margin-right: 5px;
+}
+
+/* line 36, app/assets/stylesheets/temples.scss */
+.horizontal_scroll > li:last-child {
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 40, app/assets/stylesheets/temples.scss */
+  .horizontal_scroll > li:last-child {
+    padding-right: 0;
+  }
+}
+
+/* line 43, app/assets/stylesheets/temples.scss */
+.horizontal_scroll img {
+  vertical-align: bottom;
+  max-height: 140px;
+  max-width: 140px;
+  margin: 0 5px;
+}
+
+/* line 52, app/assets/stylesheets/temples.scss */
+.temple_new_form {
+  background-image: url("KUMAKICHI1027540_TP_V.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 58, app/assets/stylesheets/temples.scss */
+.temple_new_form .container {
+  max-width: 510px;
+  min-width: 324px;
+  padding-top: 20px;
+  background-color: white;
+  border: 1px solid #838383;
+  border-bottom: 3px solid grey;
+  background-image: url("KUMAKICHI1027540_TP_V.jpg");
+  color: white;
+}
+
+/* line 69, app/assets/stylesheets/temples.scss */
+.temple_new_form .row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+
+/* line 73, app/assets/stylesheets/temples.scss */
+.temple_new_form .row.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid grey;
+  background: url("IMG_20190914_191108_273.jpg");
+  background-size: cover;
+  color: white;
+}
+
+/* line 84, app/assets/stylesheets/temples.scss */
+.temple_index {
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("和柄.png");
+}
+
+/* line 92, app/assets/stylesheets/temples.scss */
+.temple_item {
+  min-width: 1100px;
+  width: 1100px;
+  min-height: 370px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  bottom: 50px;
+}
+
+/* line 104, app/assets/stylesheets/temples.scss */
+.temple_word {
+  font-size: 14px;
+}
+
+/* line 106, app/assets/stylesheets/temples.scss */
+.temple_word span {
+  font-size: 14px;
+}
+
+/* line 110, app/assets/stylesheets/temples.scss */
+.temple_word .temple_infomation {
+  position: relative;
+  width: 800px;
+  height: 100%;
+  margin-left: 410px;
+  text-align: left;
+  left: 0;
+}
+
+/* line 117, app/assets/stylesheets/temples.scss */
+.temple_word .temple_infomation p {
+  position: absolute;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+/* line 123, app/assets/stylesheets/temples.scss */
+.temple_word .temple_infomation h2, .temple_word .temple_infomation h3 {
+  position: absolute;
+  color: #000;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+/* line 130, app/assets/stylesheets/temples.scss */
+.temple_word .temple_infomation h3 {
+  position: absolute;
+  font-size: 18px;
+}
+
+/* line 139, app/assets/stylesheets/temples.scss */
+.item-photo {
+  color: #333333;
+  list-style: none;
+  margin: 0 0 0 15px;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  float: left;
+  width: 228px;
+}
+
+/* line 152, app/assets/stylesheets/temples.scss */
+.item-mainImg {
+  color: #333333;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 5px;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 228px;
+  height: 100%;
+  background-color: #fff;
+  float: left;
+}
+
+/* line 170, app/assets/stylesheets/temples.scss */
+.item-thumbs {
+  display: flex;
+  float: right;
+  list-style-type: none;
+}
+
+/* line 176, app/assets/stylesheets/temples.scss */
+.temple_slider_ttl {
+  width: 1200px;
+  min-height: 261px;
+  height: 100%;
+  margin: 15px auto;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+/* タイトル */
+/* line 185, app/assets/stylesheets/temples.scss */
+.slider_ttl {
+  color: #333;
+  text-align: inherit;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: inherit;
+  margin: 0 0 10px 0;
+  background-color: #e5e5e5;
+  text-indent: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+/* 名前 */
+/* line 200, app/assets/stylesheets/temples.scss */
+.temple_name {
+  color: #bf0000;
+  line-height: 1.65;
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+/* line 206, app/assets/stylesheets/temples.scss */
+.temple_photo {
+  width: 140px;
+  height: 100%;
+  list-style: none;
+  margin: 0 5px;
+  float: left;
+}
+
+/* line 214, app/assets/stylesheets/temples.scss */
+.temple_photo::after {
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 229, app/assets/stylesheets/temples.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 235, app/assets/stylesheets/temples.scss */
+.temple_edit_form {
+  background-image: url("KUMAKICHI1027540_TP_V.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 241, app/assets/stylesheets/temples.scss */
+.temple_edit_form .container {
+  max-width: 510px;
+  min-width: 324px;
+  padding-top: 20px;
+  background-color: white;
+  border: 1px solid #838383;
+  border-bottom: 3px solid grey;
+  background-image: url("KUMAKICHI1027540_TP_V.jpg");
+  color: white;
+}
+
+/* line 252, app/assets/stylesheets/temples.scss */
+.temple_edit_form .row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+
+/* line 256, app/assets/stylesheets/temples.scss */
+.temple_edit_form .row.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid grey;
+  background: url("IMG_20190914_191108_273.jpg");
+  background-size: cover;
+  color: white;
+}
+
+/* line 267, app/assets/stylesheets/temples.scss */
+.temple_show_all {
+  height: 100%;
+  width: 100%;
+  background-image: url("和柄.png");
+}
+
+/* line 273, app/assets/stylesheets/temples.scss */
+.temple_show {
+  min-height: calc(100vh - 120px);
+  height: calc(100% - 100px);
+  margin: 10px 100px;
+  position: relative;
+  border: 2px solid #ccc;
+}
+
+/* line 280, app/assets/stylesheets/temples.scss */
+.temple_show .col-md-4 {
+  margin-left: 100px;
+}
+
+/* line 283, app/assets/stylesheets/temples.scss */
+.temple_show .card-body {
+  position: absolute;
+  left: 500px;
+  width: 500px;
+  height: 500px;
+  margin-left: 15px;
+}
+
+/* line 290, app/assets/stylesheets/temples.scss */
+.temple_show .card-body .temple_article {
+  border: 2px solid #ccc;
+  height: 200px;
+  width: 515px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+/* line 298, app/assets/stylesheets/temples.scss */
+.temple_show .temple_img {
+  width: 500px;
+  height: 500px;
+  margin: 15px;
+  float: left;
+  border: 2px solid #CCC;
+  border-radius: 30px;
+}
+
+/* line 307, app/assets/stylesheets/temples.scss */
+.temple_show .custom_link {
+  position: absolute;
+}
+
+/* line 310, app/assets/stylesheets/temples.scss */
+.temple_show .show_link {
+  position: absolute;
+  float: left;
+  top: calc(100% - 30px);
+}
+
+/* line 319, app/assets/stylesheets/temples.scss */
+.row no-gutters {
+  background-color: black;
+}
