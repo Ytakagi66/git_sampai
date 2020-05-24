@@ -1,6 +1,6 @@
 <main>
   <div class="temple_index">
-    <h1 class="Headline">寺院～Temple～</h1>
+    <h1 class="Headline">寺院</h1>
   <div class="temple_item">
     <ul class="slider">
       <% @temples.each do|temple| %>
@@ -32,7 +32,10 @@
         <% end %>
     </ul>
   </div>
-  
+  <% if user_signed_in? %>
+     <!-- ログインしている時 -->
+  <div class="user_nav grid-6">
   <%= link_to '新規登録', new_temple_path %>
+  <% end %>
   </div>
 </main>

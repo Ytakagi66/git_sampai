@@ -1,6 +1,6 @@
 <main>
   <div class="shrine_index">
-    <h1 class="Headline">神社～Shrine～</h1>    
+    <h1 class="Headline">神社</h1>    
   <div class="shrine_item">
     <ul class="slider">
       <% @shrines.each do|shrine| %>
@@ -34,7 +34,10 @@
         <% end %>
     </ul>
   </div>
-  
+  <% if user_signed_in? %>
+     <!-- ログインしている時 -->
+  <div class="user_nav grid-6">
   <%= link_to '新規登録', new_shrine_path %>
+  <% end %>
   </div>
 </main>

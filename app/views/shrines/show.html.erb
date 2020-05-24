@@ -18,9 +18,10 @@
           </div>
       </div>
     </div>
+    <% if user_signed_in? %>
     <div class="show_link">  
       <%= link_to '編集', edit_shrine_path(@shrine) %> |
-      <%= link_to '戻る', shrines_path %>
+    <% end %>
     </div>      
   </div>     
 </main>
