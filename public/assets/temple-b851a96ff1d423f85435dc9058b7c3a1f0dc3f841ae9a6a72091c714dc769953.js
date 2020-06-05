@@ -1,0 +1,1 @@
+$(document).ready(function(){$("slider").slick({autoplay:!0,autoplaySpeed:!0})}),$(".horizontal_scroll").slick({asNavFor:".slider",focusOnSelect:!0,dots:!0,slidesToShow:7,variableWidth:!0,slidesToScroll:1,pauseOnHover:!0});
